@@ -12,7 +12,6 @@ public interface UtilisateurService extends Remote{
 	public List<Utilisateur> cherchercherUtilisateurParPseudo(String pseudo) throws RemoteException;
 	public List<Utilisateur> chercherUtilisateurParNom(String nom) throws RemoteException;
 	public Utilisateur chercherUtilisateurParId(int id) throws RemoteException;
-	//section administrateur 
 	public List<Utilisateur> listeUtilisateurs() throws RemoteException;
 	public String testRMI() throws RemoteException; 
 

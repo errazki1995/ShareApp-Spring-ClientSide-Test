@@ -2,6 +2,7 @@ package com.common.gustaveeiffel.upem;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.sql.Date;
 import java.util.List;
 
 
@@ -20,5 +21,7 @@ public interface ProduitService extends Remote {
     public boolean ajouterDemande(Demande d, int produit, int utilisateurid) throws RemoteException;
     public boolean modifierDemande(int produit, int utilisateurid, int priorite) throws RemoteException;
     public List<Demande> listeDemandes(int produitid) throws RemoteException;
+	public boolean Emprunter(int produitid, int utilisateurid,Date dateRetour) throws RemoteException;
+
 
 }
